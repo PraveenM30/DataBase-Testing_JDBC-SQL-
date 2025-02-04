@@ -1,0 +1,12 @@
+use mydb;
+
+create table FireFlink(browser varchar(20),UserName varchar(30)not null,Password varchar(20) not null,envi varchar(25));
+
+describe FireFlink;
+
+insert into FireFlink values('chrome','praveen.m@fireflink.com','Password@123','prod');
+insert into FireFlink values('firefox','praveen.m@fireflink.com','Password@123','test');
+
+update fireflink set envi='prod' where browser='chrome';
+
+select * from FireFlink where envi='prod';
